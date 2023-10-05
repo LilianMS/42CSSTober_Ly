@@ -1,0 +1,137 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    color: gray;
+}
+
+.main{
+    display: flex;
+    padding: 20px;
+    /* flex-direction: column; */
+    
+}
+
+.div-day{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #646464;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
+}
+
+.div-day h2{
+    margin-bottom: 20px;
+}
+
+.day1{
+    border: 6px outset white;
+    background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    /* background-color: lightblue; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head, .eyes, .face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head{
+    position:fixed;
+    background-color: transparent;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border-radius:50% 50% 50% 16% ;
+    /* border-left: 20px solid transparent ;
+    border-bottom: 20px solid transparent ; */
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.face{
+    background-color: rgb(223, 160, 1);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    flex-direction: column;
+    transform: rotate(45deg);
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.eyes{
+    justify-content:space-between;
+    width: 95px;
+}
+
+.eyes :first-child{
+    background-color: #000;
+    width: 30px;
+    height: 50px;
+   
+    border-radius: 20% 80% 20% 80%;
+}
+
+.eyes :last-child{
+    background-color: #000;
+    width: 30px;
+    height: 50px;
+   
+    border-radius: 80% 20% 80% 20%;
+}
+
+.eyes div:hover{
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0px 4px #000;
+    width: 36px;
+    
+    border-radius: 30% 10%;
+
+}
+
+.smile{
+    background-color: transparent;
+    width: 30px;
+    height: 50px;
+    border-radius: 70%;
+    box-shadow: 0 7px black;
+}
+
+.head:active{
+    background-color: rgb(170, 170, 170);
+    cursor:wait;
+}
+.head:hover{
+    cursor: pointer;
+}
+.face:hover{
+    cursor: pointer;
+}
+.face:active{
+    background-color: transparent;
+    cursor:wait;
+}
