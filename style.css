@@ -14,9 +14,14 @@ body{
     text-align: center;
 }
 
-a:visited{
+a, a:visited{
     color: gray;
 }
+
+a:active{
+    color: blueviolet;
+}
+
 .main{
     display: flex;
     padding: 20px;
@@ -158,4 +163,91 @@ a:visited{
 .face:active{
     background-color: transparent;
     cursor:wait;
+}
+
+.c{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px 10px;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1{
+    width: 550px;
+    height: 350px;
+    margin: -60px;
+    /* overflow: hidden; */
+    bottom: -90px;
+}
+
+.day4{
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(120deg,lightblue, cyan,blue);  
+}
+
+.c7{
+    background-image: linear-gradient(120deg, purple, blueviolet);
+}
+
+.c5{
+    background-image: linear-gradient(120deg, blue, lightblue);
+}
+
+.c6{
+    background-image: linear-gradient(120deg, darkblue,blue);
+}
+
+.c4{
+    background-image: linear-gradient(120deg, green, greenyellow);
+}
+
+.c3{
+    background-image: linear-gradient(120deg, gold, yellow);
+}
+
+.c2{
+    background-image: linear-gradient(120deg, orangered, yellow);
+}
+
+.c1{
+    background-image: linear-gradient(120deg, red, orangered);
+}
+
+.moeda{
+    width: 140px;
+    height: 180px;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 48% 48% 48% 48%;
+    box-shadow: 10px 0px goldenrod;
+    border-top: 10px solid goldenrod;
+    border-right: 16px solid goldenrod;
+    border-left: 10px solid goldenrod;
+    border-bottom: 10px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number1b{
+    width: 20px;
+    height: 110px;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+.number1a{
+    width: 20px;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    margin-bottom: -46px;
+    margin-left: -10px;
 }
