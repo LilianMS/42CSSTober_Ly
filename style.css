@@ -120,7 +120,7 @@ a:active{
     background-color: #000;
     width: 30px;
     height: 50px;
-   
+
     border-radius: 20% 80% 20% 80%;
 }
 
@@ -128,7 +128,7 @@ a:active{
     background-color: #000;
     width: 30px;
     height: 50px;
-   
+
     border-radius: 80% 20% 80% 20%;
 }
 
@@ -137,7 +137,7 @@ a:active{
     background: transparent;
     box-shadow: 0px 4px #000;
     width: 36px;
-    
+
     border-radius: 30% 10%;
 
 }
@@ -188,7 +188,7 @@ a:active{
 .day4{
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(120deg,lightblue, cyan,blue);  
+    background-image: linear-gradient(120deg,lightblue, cyan,blue);
 }
 
 .c7{
@@ -205,18 +205,39 @@ a:active{
 
 .c4{
     background-image: linear-gradient(120deg, green, greenyellow);
+    animation: brilho4 5s linear alternate-reverse infinite;
 }
 
 .c3{
     background-image: linear-gradient(120deg, gold, yellow);
+    animation: brilho3 5s linear alternate-reverse infinite;
 }
 
 .c2{
     background-image: linear-gradient(120deg, orangered, yellow);
+    animation: brilho2 5s linear alternate-reverse infinite;
 }
 
 .c1{
     background-image: linear-gradient(120deg, red, orangered);
+    animation: brilho1 5s linear alternate-reverse infinite;
+}
+
+@keyframes brilho1 {
+    0% { background-color: red;}
+    100%{  background-color: orange;}
+}
+@keyframes brilho2 {
+    0% { background-color: orangered;}
+    100%{  background-color: yellow;}
+}
+@keyframes brilho3 {
+    0% { background-color: goldenrod;}
+    100%{  background-color: yellow;}
+}
+@keyframes brilho4 {
+    0% { background-color: green;}
+    100%{  background-color: greenyellow;}
 }
 
 .moeda{
@@ -233,6 +254,17 @@ a:active{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: giro 5s linear infinite;
+}
+
+.moeda:hover{
+    cursor: pointer;
+    animation: giro 0s;
+}
+
+@keyframes giro {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(360deg);}
 }
 
 .number1b{
