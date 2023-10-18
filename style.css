@@ -350,3 +350,82 @@ a:active{
     display: block;
     top: 110px;
 }
+
+.bonus42{
+    background-image:linear-gradient(white, white);
+    border-radius: 10px;
+    border: 10px double black;
+}
+
+.fundo-branco{
+    width: 230px;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    padding: 6px;
+    padding-top: 40px;
+    transform: scale(70%);
+    /* background-color: rgb(78, 61, 61); */
+    margin: -20px;
+}
+
+.ret1{
+    background-color: #000;
+    width: 110px;
+    height: 32px;
+    margin-top: 84px;
+    margin-right: 14px;
+}
+
+.ret1::before{
+    content: "";
+    background-color: black;
+    display: block;
+    height: 83px;
+    width: 38px;
+    position: relative;
+    transform: skewX(-40deg);
+    top: -83px;
+    left: 35px;
+}
+
+.ret1::after{
+    content: "";
+    background-color: black;
+    display: block;
+    height: 43px;
+    width: 38px;
+    position: relative;
+    top: -60px;
+    left: 72px;
+}
+
+.ret2{
+    background-color: #000;
+    width: 80px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.ret2::before{
+    content: "";
+    background-color: white;
+    display: block;
+    height: 40px;
+    width: 38px;
+    position: relative;
+    transform: skewY(-50deg);
+    top: 21px;
+}
+
+.ret2::after{
+    content: "";
+    background-color: white;
+    display: block;
+    height: 40px;
+    width: 38px;
+    position: relative;
+    transform: skewY(-50deg);
+    top: 18px;
+    left: 44px;
+}
