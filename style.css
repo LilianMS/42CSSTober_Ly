@@ -269,7 +269,7 @@ a:active {
 /*
     day3 geek óculos
 */
-.oculos {
+.glasses {
     width: 100%;
     height: 50%;
     display: flex;
@@ -334,7 +334,7 @@ a:active {
 
 }
 
-.raio {
+.bolt, .energy{
     content: "";
     background-color: goldenrod;
     display: block;
@@ -346,7 +346,7 @@ a:active {
     top: -20px;
 }
 
-.raio::before {
+.bolt::before, .energy::before {
     content: "";
     background-color: goldenrod;
     display: block;
@@ -358,7 +358,7 @@ a:active {
     transform: skewX(0deg);
 }
 
-.raio::after {
+.bolt::after, .energy::after {
     content: "";
     background-color: goldenrod;
     display: block;
@@ -366,8 +366,71 @@ a:active {
     width: 38px;
     position: relative;
     left: 22px;
-    top: -30px;
+    top: -36px;
     transform: skewX(0deg);
+}
+
+.energy{
+    transform: skew(-30deg) scale(70%);
+    left: 0px;
+    top: 0px;
+    box-shadow: 2px 2px #000;
+}
+
+.energy, .energy::after, .energy::before{
+    border-radius: 6px;
+}
+.energy::before{
+    top: -33px;
+}
+
+.energy::after{
+    box-shadow: 2px 2px #000;
+}
+
+.energy-box{
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #646464; */
+    align-items: center;
+    margin-right: -50px;
+    transform: scale(80%);
+}
+
+.energy-top, .energy-bottom{
+    background-color: grey;
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    border: 10px grey solid;
+}
+
+.energy-top{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+.energy-bottom{
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.energy-bottom div{
+    width: 100%;
+    height: 25px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
+
+.day22{
+    flex-direction: row;
+    padding-top: 30px;
 }
 
 /*
@@ -668,6 +731,13 @@ a:active {
     position: relative;
     display: block;
     top: 110px;
+}
+
+/* Day 22 - DNA  */
+.dna{
+    width: 100px;
+    height: 100px;
+    border: #000 4xp dashed;
 }
 
 /* animations */
