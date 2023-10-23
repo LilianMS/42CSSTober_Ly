@@ -1,10 +1,12 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(39, 38, 38);
     display: flex;
     flex-direction: column;
@@ -14,26 +16,27 @@ body{
     text-align: center;
 }
 
-a, a:visited{
+a,
+a:visited {
     color: gray;
 }
 
-a:active{
+a:active {
     color: blueviolet;
 }
 
-.main{
+.main {
     display: flex;
     padding: 20px;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     width: 100%;
     row-gap: 30px;
     column-gap: 2em;
 }
 
-.div-day{
+.div-day {
     padding: 20px;
     text-align: center;
     display: flex;
@@ -43,14 +46,14 @@ a:active{
     border: 1px solid #646464;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
-   flex: 1;
+    flex: 1;
 }
 
-.div-day p{
+.div-day p {
     margin-bottom: 20px;
 }
 
-.day{
+.day {
     border: 6px outset white;
     background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
     border-radius: 20px;
@@ -63,12 +66,13 @@ a:active{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /*
     day1 emoji alien
 */
-.day1{
+.day1 {
     border: 6px outset white;
     background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
     border-radius: 20px;
@@ -83,26 +87,28 @@ a:active{
     align-items: center;
 }
 
-.head, .eyes, .face{
+.head,
+.eyes,
+.face {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.head{
-    position:fixed;
+.head {
+    position: fixed;
     background-color: transparent;
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border-radius:50% 50% 50% 16% ;
+    border-radius: 50% 50% 50% 16%;
     /* border-left: 20px solid transparent ;
     border-bottom: 20px solid transparent ; */
     transform: rotate(-45deg);
     position: relative;
 }
 
-.face{
+.face {
     background-color: rgb(223, 160, 1);
     width: 160px;
     height: 160px;
@@ -114,12 +120,12 @@ a:active{
 
 }
 
-.eyes{
-    justify-content:space-between;
+.eyes {
+    justify-content: space-between;
     width: 95px;
 }
 
-.eyes :first-child{
+.eyes :first-child {
     background-color: #000;
     width: 30px;
     height: 50px;
@@ -127,7 +133,7 @@ a:active{
     border-radius: 20% 80% 20% 80%;
 }
 
-.eyes :last-child{
+.eyes :last-child {
     background-color: #000;
     width: 30px;
     height: 50px;
@@ -135,7 +141,7 @@ a:active{
     border-radius: 80% 20% 80% 20%;
 }
 
-.eyes div:hover{
+.eyes div:hover {
     cursor: pointer;
     background: transparent;
     box-shadow: 0px 4px #000;
@@ -145,7 +151,7 @@ a:active{
 
 }
 
-.smile{
+.smile {
     background-color: transparent;
     width: 30px;
     height: 50px;
@@ -153,27 +159,117 @@ a:active{
     box-shadow: 0 7px black;
 }
 
-.head:active{
+.head:active {
     background-color: rgb(170, 170, 170);
-    cursor:wait;
+    cursor: wait;
 }
-.head:hover{
+
+.head:hover {
     cursor: pointer;
 }
-.face:hover{
+
+.face:hover {
     cursor: pointer;
 }
-.face:active{
+
+.face:active {
     background-color: transparent;
-    cursor:wait;
+    cursor: wait;
 }
+
 /* fim emojialien */
 
+/* day2 parasite */
+.body {
+    width: 130px;
+    height: 150px;
+    background-color: #cc7b7b;
+    border-radius: 50%;
+    border: 10px #000 solid;
+    transform: rotate(-45deg);
+    display: flex;
+    animation: shake 0.01s infinite;
+    position: relative;
+}
+
+.bodyin {
+    border: 10px #000 dotted;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    /* animation: zoom 1s infinite; */
+}
+
+.bodyin:hover {
+    animation: 0s;
+}
+
+.eye {
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.eye::before {
+    background-color: #000;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+}
+
+.eye::after {
+    background-color: #fff;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0px;
+    left: -10px;
+    position: relative;
+    border: #000 solid 1px;
+    animation: zoom2 4s infinite;
+}
+
+.p {
+    width: 6px;
+    height: 16px;
+    background-color: #000;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    display: block;
+    border: #cc7b7b solid 1px;
+    animation: zoom2 6s infinite;
+}
+
+.left {
+    transform: rotate(-45deg);
+    margin-right: 20px;
+    top: 5px;
+}
+
+
+.right {
+    transform: rotate(45deg);
+    margin-left: 30px;
+    left: 10px;
+    top: 10px;
+}
 
 /*
     day3 geek óculos
 */
-.oculos{
+.oculos {
     width: 100%;
     height: 50%;
     display: flex;
@@ -183,7 +279,9 @@ a:active{
     justify-content: center;
 }
 
-.eyeL, .eyeR,.haste{
+.eyeL,
+.eyeR,
+.haste {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -194,12 +292,16 @@ a:active{
     z-index: 2;
 }
 
-.eyeL, .eyeR{
+.eyeL,
+.eyeR {
     background-color: rgba(196, 194, 194, 0.3);
     box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2) inset;
 }
 
-.eyeL::after, .eyeR::after, .eyeL::before,.eyeR::before{
+.eyeL::after,
+.eyeR::after,
+.eyeL::before,
+.eyeR::before {
     content: "";
     display: block;
     width: 30px;
@@ -213,14 +315,15 @@ a:active{
     box-shadow: 0px 2px rgba(255, 255, 255, 0.2);
 }
 
-.eyeL::before,.eyeR::before{
+.eyeL::before,
+.eyeR::before {
     width: 20px;
     height: 5px;
     top: 54px;
     left: 42px;
 }
 
-.haste{
+.haste {
     border: 3px solid transparent;
     border-top-color: white;
     margin: 0 -7px;
@@ -231,10 +334,46 @@ a:active{
 
 }
 
+.raio {
+    content: "";
+    background-color: goldenrod;
+    display: block;
+    height: 16px;
+    width: 60px;
+    position: relative;
+    transform: skewX(-30deg) scale(30%);
+    left: -30px;
+    top: -20px;
+}
+
+.raio::before {
+    content: "";
+    background-color: goldenrod;
+    display: block;
+    height: 43px;
+    width: 38px;
+    position: relative;
+    left: 0px;
+    top: -40px;
+    transform: skewX(0deg);
+}
+
+.raio::after {
+    content: "";
+    background-color: goldenrod;
+    display: block;
+    height: 43px;
+    width: 38px;
+    position: relative;
+    left: 22px;
+    top: -30px;
+    transform: skewX(0deg);
+}
+
 /*
     day4 rainbow
 */
-.c{
+.c {
     width: 100%;
     height: 100%;
     padding: 30px 20px 10px;
@@ -246,74 +385,97 @@ a:active{
     justify-content: center;
 }
 
-.c1{
-    width: 550px;
+.c1 {
+    width: 350px;
     height: 350px;
     margin: -60px;
     /* overflow: hidden; */
     bottom: -90px;
 }
 
-.day4{
+.day4 {
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(120deg,lightblue, cyan,blue);
+    background-image: linear-gradient(120deg, lightblue, cyan, blue);
 }
 
-.c7{
+.c7 {
     background-image: linear-gradient(120deg, purple, blueviolet);
 }
 
-.c5{
+.c5 {
     background-image: linear-gradient(120deg, blue, lightblue);
 }
 
-.c6{
-    background-image: linear-gradient(120deg, darkblue,blue);
+.c6 {
+    background-image: linear-gradient(120deg, darkblue, blue);
 }
 
-.c4{
+.c4 {
     background-image: linear-gradient(120deg, green, greenyellow);
     animation: brilho4 5s linear alternate-reverse infinite;
 }
 
-.c3{
+.c3 {
     background-image: linear-gradient(120deg, gold, yellow);
     animation: brilho3 5s linear alternate-reverse infinite;
 }
 
-.c2{
+.c2 {
     background-image: linear-gradient(120deg, orangered, yellow);
     animation: brilho2 5s linear alternate-reverse infinite;
 }
 
-.c1{
+.c1 {
     background-image: linear-gradient(120deg, red, orangered);
     animation: brilho1 5s linear alternate-reverse infinite;
 }
 
 @keyframes brilho1 {
-    0% { background-color: red;}
-    100%{  background-color: orange;}
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: orange;
+    }
 }
+
 @keyframes brilho2 {
-    0% { background-color: orangered;}
-    100%{  background-color: yellow;}
+    0% {
+        background-color: orangered;
+    }
+
+    100% {
+        background-color: yellow;
+    }
 }
+
 @keyframes brilho3 {
-    0% { background-color: goldenrod;}
-    100%{  background-color: yellow;}
+    0% {
+        background-color: goldenrod;
+    }
+
+    100% {
+        background-color: yellow;
+    }
 }
+
 @keyframes brilho4 {
-    0% { background-color: green;}
-    100%{  background-color: greenyellow;}
+    0% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: greenyellow;
+    }
 }
 
 
 /*
     day6 moeda
 */
-.moeda{
+.moeda {
     width: 140px;
     height: 180px;
     background-color: gold;
@@ -327,22 +489,22 @@ a:active{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: giro 5s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
-.moeda:hover{
+.moeda:hover {
     cursor: pointer;
     animation: giro 0s;
 }
 
-.number1b{
+.number1b {
     width: 20px;
     height: 110px;
     background-color: goldenrod;
     border-radius: 20px;
 }
 
-.number1a{
+.number1a {
     width: 20px;
     height: 50px;
     background-color: goldenrod;
@@ -356,13 +518,13 @@ a:active{
 
 /**** - BONUS - ****/
 /* bonus 1 - 42 */
-.bonus42{
-    background-image:linear-gradient(white, white);
+.bonus42 {
+    background-image: linear-gradient(white, white);
     border-radius: 10px;
     border: 10px double black;
 }
 
-.fundo-branco{
+.fundo-branco {
     width: 230px;
     height: 220px;
     border-radius: 10px;
@@ -374,7 +536,7 @@ a:active{
     margin: -20px;
 }
 
-.ret1{
+.ret1 {
     background-color: #000;
     width: 110px;
     height: 32px;
@@ -382,7 +544,7 @@ a:active{
     margin-right: 14px;
 }
 
-.ret1::before{
+.ret1::before {
     content: "";
     background-color: black;
     display: block;
@@ -394,7 +556,7 @@ a:active{
     left: 35px;
 }
 
-.ret1::after{
+.ret1::after {
     content: "";
     background-color: black;
     display: block;
@@ -405,14 +567,14 @@ a:active{
     left: 72px;
 }
 
-.ret2{
+.ret2 {
     background-color: #000;
     width: 80px;
     height: 120px;
     overflow: hidden;
 }
 
-.ret2::before{
+.ret2::before {
     content: "";
     background-color: white;
     display: block;
@@ -423,7 +585,7 @@ a:active{
     top: 21px;
 }
 
-.ret2::after{
+.ret2::after {
     content: "";
     background-color: white;
     display: block;
@@ -435,13 +597,13 @@ a:active{
     left: 44px;
 }
 
-.bonus42:hover{
-    animation: giro 2s 1 linear ;
+.bonus42:hover {
+    animation: giro 2s 1 linear;
     cursor: pointer;
 }
 
 /* bonus 4 - toalha */
-.toalha{
+.toalha {
     border: 6px outset white;
     background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
     border-radius: 20px;
@@ -467,7 +629,7 @@ a:active{
     z-index: 1;
 }
 
-.fundo::after{
+.fundo::after {
     content: "";
     display: block;
     background-color: #6a87b2;
@@ -509,8 +671,68 @@ a:active{
 }
 
 /* animations */
-@keyframes giro {
-    0% {transform: rotateY(0deg);}
-    50% {transform: rotateY(360deg);}
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-43deg);
+    }
+
+    0% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        border-width: 15px;
+    }
+
+    50% {
+        border-width: 12px;
+    }
+
+    100% {
+        border-width: 15px;
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        border-width: 1px;
+    }
+
+    100% {
+        border-width: 2px;
+    }
+
+    0% {
+        border-width: 1px;
+    }
+}
