@@ -381,6 +381,11 @@ a:active {
     box-shadow: 2px 2px #000;
 }
 
+/* .energy-wrap{
+    opacity: 100%;
+    animation: energy-shine 1.5s infinite;
+} */
+
 .energy,
 .energy::after,
 .energy::before {
@@ -435,6 +440,25 @@ a:active {
     height: 25px;
     background-color: yellowgreen;
     border-radius: 20px;
+    opacity: 100%;
+}
+
+.energy-bottom div:first-child {
+    animation: energy-shine 1.5s infinite;
+}
+
+@keyframes energy-shine {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 .day22 {
@@ -589,22 +613,32 @@ a:active {
 /* day 19 star */
 
 
-.star-box{
+.star-box {
     transform: rotate(20deg) scale(70%);
-    opacity: 50%;
-    animation: brilho 4s infinite;
-}
-
-@keyframes brilho {
-    0% {opacity: 30%;}
-    50% {opacity: 100;}
-    100% {opacity: 30%;}
-}
-.star-box:hover{
     opacity: 100%;
+    animation: shine 4s infinite;
 }
 
-.star, .star::after{
+@keyframes shine {
+    0% {
+        opacity: 80%;
+    }
+
+    50% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 80%;
+    }
+}
+
+.star-box:hover {
+    animation: 0s;
+}
+
+.star,
+.star::after {
     position: relative;
     display: block;
     width: 0px;
@@ -616,7 +650,7 @@ a:active {
 
 }
 
-.star::before{
+.star::before {
     display: block;
     content: "";
     border-bottom: 80px solid rgb(0, 187, 255);
@@ -628,7 +662,7 @@ a:active {
     transform: rotate(-35deg);
 }
 
-.star::after{
+.star::after {
     display: block;
     content: "";
     position: absolute;
