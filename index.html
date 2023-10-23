@@ -1,183 +1,808 @@
-<!DOCTYPE html>
-<html lang="en">
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Challenge | 42CSSTober 2023</title>
-</head>
+body {
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: gray;
+    font-size: 1.2em;
+    text-align: center;
+}
 
-<body>
+a,
+a:visited {
+    color: gray;
+}
 
-    <div class="header">
-        <h1> 42CSSTober | Challenge 2023</h1>
-        <code><i>em construção...</i></code><br><br>
-        <em>
-            <i style="font-size: 100px;color: blueviolet;" class="fa fa-grav"></i><br><br>
-            <h4>by Ly - cadet @lilmende <i class="fa fa-hand-spock-o fa-fw"></i></h4>
-        </em>
-        <p style="font-size: 1.5em;">
-            <a href="https://github.com/LilianMS"><i class="fa fa fa-github-alt (inverse) on fa-circle fa-fw"></i></a> |
-            <a href="https://linkedin.com/in/mendeslilian"><i class="fa fa-linkedin fa-fw"></i></a> |
-            <a href="https://instagram.com/meta.coding"><i class="fa fa-instagram fa-fw"></i></a>
-            <br><br>
-        </p>
-        <p>Click here to read about the challenge <a href="https://github.com/mewmewdevart/42CSSTober">Github
-                Readme</a>.</p><br>
-        <hr>
-    </div>
-    <div class="main">
-        <div class="div-day">
-            <h2>Day #1</h2>
-            <p>emoji</p>
-            <div class="day1">
-                <div class="head">
-                    <div class="face">
-                        <div class="eyes">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="smile"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #2</h2>
-            <p>parasite</p>
-            <div class="day day2">
-                <div class="body">
-                    <div class="bodyin">
-                        <div class="p left"></div>
-                        <div class="eye"></div>
-                        <div class="p right"></div><br>
-                        <div class="p left"></div>
-                        <div class="p right"></div>
-                        <div class="p left"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #3</h2>
-            <p>geek</p>
-            <div class="day">
-                <div class="raio"></div>
-                <div class="oculos">
-                    <div class="eyeL"></div>
-                    <div class="haste"></div>
-                    <div class="eyeR"></div>
-                </div>
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #4</h2>
-            <p>rainbow</p>
-            <div class="day day4">
-                <div class="c c1">
-                    <div class="c c2">
-                        <div class="c c3">
-                            <div class="c c4">
-                                <div class="c c5">
-                                    <div class="c c6">
-                                        <div class="c c7"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #5</h2>
-            <p>poisonous</p>
-            <div class="day day5">
-                <!-- <div class="head">
-                    <div class="face">
-                        <div class="eyes">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="smile"></div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #6</h2>
-            <p>gold</p>
-            <div class="day day6">
-                <div class="moeda">
-                    <div class="moeda-face">
-                        <div class="number1a"></div>
-                        <div class="number1b"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #7</h2>
-            <p>virus</p>
-            <div class="day day7">
-                <!-- <div class="head">
-                    <div class="face">
-                        <div class="eyes">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="smile"></div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>Day #18</h2>
-            <p>ghost</p>
-            <div class="day day7">
-                <!-- <div class="head">
-                    <div class="face">
-                        <div class="eyes">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="smile"></div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>#Bonus-1</h2>
-            <p>o sentido da vida...</p>
-            <div class="day">
-                <div class="bonus42">
-                    <div class="fundo-branco">
-                        <div class="ret1"></div>
-                        <div class="ret2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="div-day">
-            <h2>#Bonus-4</h2>
-            <p>toalha</p>
-            <div class="toalha">
-                <div class="fundo"></div>
-                <div class="frente"></div>
-            </div>
-        </div>
-    </div><!-- end main-->
-    <p style="font-size: 1.5em;">
-        <i class="fa fa-html5"></i>
-        <i class="fa fa-css3"></i>
-        <i class="fa fa-fa"></i>
-        <i class="fa fa-vscode"></i>
-        <i class="fa fa-linux"></i>
-        <i class="fa fa-firefox"></i>
-    </p>
+a:active {
+    color: blueviolet;
+}
 
-</body>
+.main {
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    row-gap: 30px;
+    column-gap: 2em;
+}
 
-</html>
+.div-day {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #646464;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.499);
+    flex: 1;
+}
+
+.div-day p {
+    margin-bottom: 20px;
+}
+
+.day {
+    border: 6px outset white;
+    background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    /* background-color: lightblue; */
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+    day1 emoji alien
+*/
+.day1 {
+    border: 6px outset white;
+    background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    /* background-color: lightblue; */
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head,
+.eyes,
+.face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    position: fixed;
+    background-color: transparent;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border-radius: 50% 50% 50% 16%;
+    /* border-left: 20px solid transparent ;
+    border-bottom: 20px solid transparent ; */
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.face {
+    background-color: rgb(223, 160, 1);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    flex-direction: column;
+    transform: rotate(45deg);
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.eyes {
+    justify-content: space-between;
+    width: 95px;
+}
+
+.eyes :first-child {
+    background-color: #000;
+    width: 30px;
+    height: 50px;
+
+    border-radius: 20% 80% 20% 80%;
+}
+
+.eyes :last-child {
+    background-color: #000;
+    width: 30px;
+    height: 50px;
+
+    border-radius: 80% 20% 80% 20%;
+}
+
+.eyes div:hover {
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0px 4px #000;
+    width: 36px;
+
+    border-radius: 30% 10%;
+
+}
+
+.smile {
+    background-color: transparent;
+    width: 30px;
+    height: 50px;
+    border-radius: 70%;
+    box-shadow: 0 7px black;
+}
+
+.head:active {
+    background-color: rgb(170, 170, 170);
+    cursor: wait;
+}
+
+.head:hover {
+    cursor: pointer;
+}
+
+.face:hover {
+    cursor: pointer;
+}
+
+.face:active {
+    background-color: transparent;
+    cursor: wait;
+}
+
+/* fim emojialien */
+
+/* day2 parasite */
+.body {
+    width: 130px;
+    height: 150px;
+    background-color: #cc7b7b;
+    border-radius: 50%;
+    border: 10px #000 solid;
+    transform: rotate(-45deg);
+    display: flex;
+    animation: shake 0.01s infinite;
+    position: relative;
+}
+
+.bodyin {
+    border: 10px #000 dotted;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    /* animation: zoom 1s infinite; */
+}
+
+.bodyin:hover {
+    animation: 0s;
+}
+
+.eye {
+    width: 30px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.eye::before {
+    background-color: #000;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+}
+
+.eye::after {
+    background-color: #fff;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0px;
+    left: -10px;
+    position: relative;
+    border: #000 solid 1px;
+    animation: zoom2 4s infinite;
+}
+
+.p {
+    width: 6px;
+    height: 16px;
+    background-color: #000;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+    display: block;
+    border: #cc7b7b solid 1px;
+    animation: zoom2 6s infinite;
+}
+
+.left {
+    transform: rotate(-45deg);
+    margin-right: 20px;
+    top: 5px;
+}
+
+
+.right {
+    transform: rotate(45deg);
+    margin-left: 30px;
+    left: 10px;
+    top: 10px;
+}
+
+/*
+    day3 geek óculos
+*/
+.glasses {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* background-color: #6a87b2; */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.eyeL,
+.eyeR,
+.haste {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    /* padding: 1px; */
+    position: relative;
+    margin: 0;
+    z-index: 2;
+}
+
+.eyeL,
+.eyeR {
+    background-color: rgba(196, 194, 194, 0.3);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2) inset;
+}
+
+.eyeL::after,
+.eyeR::after,
+.eyeL::before,
+.eyeR::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    transform: rotate(-30deg);
+    position: relative;
+    top: 45px;
+    left: 35px;
+    box-shadow: 0px 2px rgba(255, 255, 255, 0.2);
+}
+
+.eyeL::before,
+.eyeR::before {
+    width: 20px;
+    height: 5px;
+    top: 54px;
+    left: 42px;
+}
+
+.haste {
+    border: 3px solid transparent;
+    border-top-color: white;
+    margin: 0 -7px;
+    width: 40px;
+    height: 30px;
+    top: 5px;
+    z-index: 1;
+
+}
+
+.bolt, .energy{
+    content: "";
+    background-color: goldenrod;
+    display: block;
+    height: 16px;
+    width: 60px;
+    position: relative;
+    transform: skewX(-30deg) scale(30%);
+    left: -30px;
+    top: -20px;
+}
+
+.bolt::before, .energy::before {
+    content: "";
+    background-color: goldenrod;
+    display: block;
+    height: 43px;
+    width: 38px;
+    position: relative;
+    left: 0px;
+    top: -40px;
+    transform: skewX(0deg);
+}
+
+.bolt::after, .energy::after {
+    content: "";
+    background-color: goldenrod;
+    display: block;
+    height: 43px;
+    width: 38px;
+    position: relative;
+    left: 22px;
+    top: -36px;
+    transform: skewX(0deg);
+}
+
+.energy{
+    transform: skew(-30deg) scale(70%);
+    left: 0px;
+    top: 0px;
+    box-shadow: 2px 2px #000;
+}
+
+.energy, .energy::after, .energy::before{
+    border-radius: 6px;
+}
+.energy::before{
+    top: -33px;
+}
+
+.energy::after{
+    box-shadow: 2px 2px #000;
+}
+
+.energy-box{
+    width: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #646464; */
+    align-items: center;
+    margin-right: -50px;
+    transform: scale(80%);
+}
+
+.energy-top, .energy-bottom{
+    background-color: grey;
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    border: 10px grey solid;
+}
+
+.energy-top{
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+.energy-bottom{
+    height: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.energy-bottom div{
+    width: 100%;
+    height: 25px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
+
+.day22{
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+/*
+    day4 rainbow
+*/
+.c {
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px 10px;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1 {
+    width: 350px;
+    height: 350px;
+    margin: -60px;
+    /* overflow: hidden; */
+    bottom: -90px;
+}
+
+.day4 {
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(120deg, lightblue, cyan, blue);
+}
+
+.c7 {
+    background-image: linear-gradient(120deg, purple, blueviolet);
+}
+
+.c5 {
+    background-image: linear-gradient(120deg, blue, lightblue);
+}
+
+.c6 {
+    background-image: linear-gradient(120deg, darkblue, blue);
+}
+
+.c4 {
+    background-image: linear-gradient(120deg, green, greenyellow);
+    animation: brilho4 5s linear alternate-reverse infinite;
+}
+
+.c3 {
+    background-image: linear-gradient(120deg, gold, yellow);
+    animation: brilho3 5s linear alternate-reverse infinite;
+}
+
+.c2 {
+    background-image: linear-gradient(120deg, orangered, yellow);
+    animation: brilho2 5s linear alternate-reverse infinite;
+}
+
+.c1 {
+    background-image: linear-gradient(120deg, red, orangered);
+    animation: brilho1 5s linear alternate-reverse infinite;
+}
+
+@keyframes brilho1 {
+    0% {
+        background-color: red;
+    }
+
+    100% {
+        background-color: orange;
+    }
+}
+
+@keyframes brilho2 {
+    0% {
+        background-color: orangered;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes brilho3 {
+    0% {
+        background-color: goldenrod;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+@keyframes brilho4 {
+    0% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: greenyellow;
+    }
+}
+
+
+/*
+    day6 moeda
+*/
+.moeda {
+    width: 140px;
+    height: 180px;
+    background-color: gold;
+    padding: 10px;
+    border-radius: 48% 48% 48% 48%;
+    box-shadow: 10px 0px goldenrod;
+    border-top: 10px solid goldenrod;
+    border-right: 16px solid goldenrod;
+    border-left: 10px solid goldenrod;
+    border-bottom: 10px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 5s linear infinite;
+}
+
+.moeda:hover {
+    cursor: pointer;
+    animation: giro 0s;
+}
+
+.number1b {
+    width: 20px;
+    height: 110px;
+    background-color: goldenrod;
+    border-radius: 20px;
+}
+
+.number1a {
+    width: 20px;
+    height: 50px;
+    background-color: goldenrod;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    margin-bottom: -46px;
+    margin-left: -10px;
+}
+
+
+
+/**** - BONUS - ****/
+/* bonus 1 - 42 */
+.bonus42 {
+    background-image: linear-gradient(white, white);
+    border-radius: 10px;
+    border: 10px double black;
+}
+
+.fundo-branco {
+    width: 230px;
+    height: 220px;
+    border-radius: 10px;
+    display: flex;
+    padding: 6px;
+    padding-top: 40px;
+    transform: scale(70%);
+    /* background-color: rgb(78, 61, 61); */
+    margin: -20px;
+}
+
+.ret1 {
+    background-color: #000;
+    width: 110px;
+    height: 32px;
+    margin-top: 84px;
+    margin-right: 14px;
+}
+
+.ret1::before {
+    content: "";
+    background-color: black;
+    display: block;
+    height: 83px;
+    width: 38px;
+    position: relative;
+    transform: skewX(-40deg);
+    top: -83px;
+    left: 35px;
+}
+
+.ret1::after {
+    content: "";
+    background-color: black;
+    display: block;
+    height: 43px;
+    width: 38px;
+    position: relative;
+    top: -60px;
+    left: 72px;
+}
+
+.ret2 {
+    background-color: #000;
+    width: 80px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.ret2::before {
+    content: "";
+    background-color: white;
+    display: block;
+    height: 40px;
+    width: 38px;
+    position: relative;
+    transform: skewY(-50deg);
+    top: 21px;
+}
+
+.ret2::after {
+    content: "";
+    background-color: white;
+    display: block;
+    height: 40px;
+    width: 38px;
+    position: relative;
+    transform: skewY(-50deg);
+    top: 18px;
+    left: 44px;
+}
+
+.bonus42:hover {
+    animation: giro 2s 1 linear;
+    cursor: pointer;
+}
+
+/* bonus 4 - toalha */
+.toalha {
+    border: 6px outset white;
+    background: linear-gradient(rgb(43, 1, 60), rgb(1, 22, 60));
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 40px;
+    /* background-color: lightblue; */
+    margin: 5px;
+    text-align: center;
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* rgb(159, 93, 93); */
+
+.fundo {
+    background-color: rgb(159, 93, 93);
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 20px 6px 6px;
+    position: relative;
+    z-index: 1;
+}
+
+.fundo::after {
+    content: "";
+    display: block;
+    background-color: #6a87b2;
+    width: 190px;
+    height: 20px;
+    border-radius: 20px;
+    top: 2px;
+    position: relative;
+    right: 20px;
+    box-shadow: inset 6px 0 rgb(23, 75, 90);
+
+}
+
+.frente {
+    background-color: rgb(233, 139, 139);
+    height: 180px;
+    width: 150px;
+    border-radius: 4px 20px 6px 6px;
+    position: relative;
+    left: 10px;
+    z-index: 2;
+    bottom: 150px;
+}
+
+.frente::after {
+    padding-top: 10px;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    content: "42";
+    background-color: rgb(232, 185, 185);
+    height: 50px;
+    width: 150px;
+    border-top: 4px dotted white;
+    border-bottom: 4px dotted white;
+    position: relative;
+    display: block;
+    top: 110px;
+}
+
+/* Day 22 - DNA  */
+.dna{
+    width: 100px;
+    height: 100px;
+    border: #000 4xp dashed;
+}
+
+/* animations */
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(-43deg);
+    }
+
+    0% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        border-width: 15px;
+    }
+
+    50% {
+        border-width: 12px;
+    }
+
+    100% {
+        border-width: 15px;
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        border-width: 1px;
+    }
+
+    100% {
+        border-width: 2px;
+    }
+
+    0% {
+        border-width: 1px;
+    }
+}
