@@ -207,7 +207,7 @@ a:active {
     animation: 0s;
 }
 
-.eye {
+.eye, .virus-eyes {
     width: 30px;
     height: 40px;
     border-radius: 50%;
@@ -218,7 +218,7 @@ a:active {
     margin-left: 10px;
 }
 
-.eye::before {
+.eye::before, .virus-eyes::before {
     background-color: #000;
     content: "";
     width: 30px;
@@ -228,7 +228,7 @@ a:active {
     left: 4px;
 }
 
-.eye::after {
+.eye::after, .virus-eyes::after{
     background-color: #fff;
     content: "";
     width: 15px;
@@ -610,6 +610,56 @@ a:active {
     margin-left: -10px;
 }
 
+/* day 7 virus */
+.virus{
+    width: 180px;
+    height: 180px;
+    border: rgb(171, 5, 5) 22px dotted;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.virus-face{
+    width: 110%;
+    height: 110%;
+    border: rgb(171, 5, 5) solid 10px;
+    background-color: rgb(171, 5, 5);
+    border-radius: 50%;
+
+}
+
+.virus-wrap-eyes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.virus-eyes{
+    position: relative;
+    margin-top: 40px;
+    border-radius: 0 0 50% 50%;
+    height: 15px;
+}
+
+.virus-eyes::after, .virus-eyes::before{
+    align-self:self-end ;
+    background-color: black;
+    height: 20px;
+}
+
+.virus-smile{
+    width: 50px;
+    height: 20px;
+    background-color: #000;
+    position: relative;
+    bottom: -15px;
+    margin: auto;
+    border-radius: 5px;
+    border-left: #fff solid 10px;
+    border-right: #fff solid 10px;
+    /* border-top: #fff solid 20px; */
+}
 /* day 19 star */
 
 
