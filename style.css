@@ -586,6 +586,58 @@ a:active {
     margin-left: -10px;
 }
 
+/* day 19 star */
+
+
+.star-box{
+    transform: rotate(20deg) scale(70%);
+    opacity: 50%;
+    animation: brilho 4s infinite;
+}
+
+@keyframes brilho {
+    0% {opacity: 30%;}
+    50% {opacity: 100;}
+    100% {opacity: 30%;}
+}
+.star-box:hover{
+    opacity: 100%;
+}
+
+.star, .star::after{
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(0, 187, 255);
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+
+}
+
+.star::before{
+    display: block;
+    content: "";
+    border-bottom: 80px solid rgb(0, 187, 255);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: -45px;
+    left: -65px;
+    transform: rotate(-35deg);
+}
+
+.star::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -105px;
+    transform: rotate(-70deg);
+}
+
+
 /* Day 23 - DNA  */
 .dna {
     width: 100px;
